@@ -9,18 +9,7 @@
   top: 40px;
   right: 40px;
   font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 50%;
-  border: 2px solid black;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
   transition: .3s linear;
-}
-
-.burger.active {
-  transform: rotate(45deg);
 }
 
 .burger:hover {
@@ -34,9 +23,17 @@ aside {
   left: -300px;
   width: 300px;
   background-color: black;
-  transition: .3s;
+  transition: .3s linear;
 }
 
-.burger.active+aside {
+.fas {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
   left: 0%;
 }
