@@ -1,6 +1,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
 
 .burger {
@@ -18,13 +19,12 @@
   transition: .3s linear;
 }
 
-.burger:hover {
-  cursor: pointer;
+.burger.active {
   transform: rotate(45deg);
 }
 
-.burger:hover+aside {
-  left: 0%;
+.burger:hover {
+  cursor: pointer;
 }
 
 aside {
@@ -35,4 +35,8 @@ aside {
   width: 300px;
   background-color: black;
   transition: .3s;
+}
+
+.burger.active+aside {
+  left: 0%;
 }
